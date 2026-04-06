@@ -54,18 +54,27 @@ In this task, I implemented navigation between pages using two methods. The firs
 ![alt text](img/tugas3.png)
 
 ## Reflection Questions
-**1. What is the difference between catch-all routing and optional catch-all routing?**
+**1. 1. What is the difference between [id].js and [...slug].js?**
 
-- Catch-all routing is used to match multiple URL segments using a single route. It captures all parts of the URL into an array parameter. In Next.js, this is implemented using [...slug]. For example, the route /shop/clothes/tops/tshirt will be captured as ["clothes", "tops", "tshirt"].
+| Feature             | `[id].js`          | `[...slug].js`                     |
+| ------------------- | ------------------ | ---------------------------------- |
+| Type                | Dynamic route      | Catch-all route                    |
+| Parameters captured | Only one parameter | Multiple parameters                |
+| Example URL         | `/product/1`       | `/category/electronics/laptop`     |
+| Result              | `id = 1`           | `slug = ["electronics", "laptop"]` |
 
-- Optional catch-all routing is similar to catch-all routing but allows the route to be accessed even when no parameters are provided. It is implemented using [[...slug]]. This means the page can be accessed with or without additional URL segments, such as /shop or /shop/clothes.
+[id].js is used to capture a single dynamic parameter from the URL. Meanwhile, [...slug].js is used to capture multiple URL segments at once.
 
-**2. What is the difference between declarative navigation and imperative navigation?**
+**2. Why is slug in the form of an array?**
 
-- Declarative navigation uses components such as <Link> from Next.js to define navigation directly in the JSX structure. This method is simple and commonly used for navigation links between pages.
+The slug is an array because catch-all routing can capture multiple parts of the URL. Each segment of the URL becomes one element in the array. This allows the application to handle URLs with different levels of paths.
 
-- Imperative navigation uses JavaScript functions such as router.push() to programmatically change routes. It is usually used when navigation happens after an event, such as after a user logs in, submits a form, or clicks a button.
+Example: /category/a/b/c → ["a", "b", "c"]
 
-**3. What are the advantages of using a global layout compared to calling components one by one?Why is client-side navigation important in modern web applications?**
+**3. When should we use Link and router.push()?**
 
-Client-side navigation allows pages to change without fully reloading the browser. This makes the application faster and provides a smoother user experience. Instead of requesting a completely new page from the server, only the necessary data and components are updated. As a result, web applications feel more responsive and similar to desktop or mobile applications.
+**Link** should be used for navigation between pages through clickable links in the interface. **router.push()** should be used when navigation needs to happen programmatically, such as after a login process or after submitting a form.
+
+**4. Why does Next.js navigation not refresh the page?**
+
+Next.js uses client-side navigation, which means only the necessary parts of the page are updated without reloading the entire page. This makes the application faster and provides a smoother user experience.
