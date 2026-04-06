@@ -8,25 +8,25 @@
 ---
 
 ### 1. Static Routing
-![alt text](img\1-routing-dasar.png)
+![alt text](img/1-routing-dasar.png)
 
 ### 2. Folder Routing
-![alt text](img\2-routing-dgn-folder.png)
+![alt text](img/2-routing-dgn-folder.png)
 
 ### 3. Nested Routing
-![alt text](img\3-nested-routing.png)
-![alt text](img\3-nested-route.png)
-![alt text](img\3-nested-lbh-dalam.png)
+![alt text](img/3-nested-routing.png)
+![alt text](img/3-nested-route.png)
+![alt text](img/3-nested-lbh-dalam.png)
 
 ### 4. Dynamic Routing
-![alt text](img\4-dynamic-routing.png)
+![alt text](img/4-dynamic-routing.png)
 
 ### 5. Navbar Component
-![alt text](img\5-komponen-navbar.png)
-![alt text](img\5-navbar-all-pages.png)
+![alt text](img/5-komponen-navbar.png)
+![alt text](img/5-navbar-all-pages.png)
 
 ### 6. Layout Global (App Shell)
-![alt text](img\6-layout-global.png)
+![alt text](img/6-layout-global.png)
 
 ## Practical Tasks
 ### Task 1 – Routing
