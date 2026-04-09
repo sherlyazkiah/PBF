@@ -7,7 +7,7 @@
 | Kelas | TI - 3I |
 ---
 
-### 1. Clobal CSS
+### 1. Global CSS
 ![alt text](img/1-global-css.png)
 
 ### 2. CSS Module (Local Scope)
