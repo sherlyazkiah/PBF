@@ -52,7 +52,8 @@ The .env.local file usually contains sensitive information, such as API keys, da
 | Source     | Usually written directly in the code | Retrieved from APIs or databases              |
 | Update     | Requires modifying the code          | Can update automatically from the data source |
 | Example    | Hardcoded product list               | Data from Firebase Firestore                  |
-|
+
+Static data is usually defined directly in the code and does not change unless the developer manually edits the source code. In contrast, dynamic data comes from external sources such as databases or APIs, allowing the application to update the information automatically without modifying the code.
 
 
 **4. Why is Next.js called a fullstack framework?**
